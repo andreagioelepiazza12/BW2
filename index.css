@@ -1,0 +1,26 @@
+body,
+html {
+  height: 100%;
+  font-family: "Circular";
+}
+
+body div:nth-child(3) {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.flex-row p:nth-child(1) {
+  font-size: 12px;
+}
+.flex-row p:nth-child(2)::after {
+  content: " • ";
+}
+.flex-row p + p {
+  font-size: 11px;
+}
+
+.position-absolute {
+  font-size: 9px;
+  margin-bottom: 100%;
+  margin-left: 85%;
+}

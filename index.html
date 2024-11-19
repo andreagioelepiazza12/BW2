@@ -1,11 +1,638 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/circular-font.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <div class="col-2 sidebar">
+          <div>
+            <div>
+              <div class="text-white">
+                <div
+                  class="d-flex align-items-end justify-content-between mb-2"
+                >
+                  <h6 class="m-0 mt-2">Attività amici</h6>
+                  <div class="d-flex gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="21"
+                      height="21"
+                      fill="currentColor"
+                      class="bi bi-person"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="21"
+                      height="21"
+                      fill="currentColor"
+                      class="bi bi-x-lg"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <hr class="m-0 my-3" />
+                <div class="position-relative">
+                  <div
+                    class="d-flex align-items-top justify-content-left gap-1 mb-3"
+                  >
+                    <div class="flex-column me-3">
+                      <img
+                        src="https://images.unsplash.com/photo-1731573818042-3237bbed7ce1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                        style="height: 35px; width: 35px"
+                        class="img-fluid rounded-circle"
+                      />
+                    </div>
+                    <div class="flex-row mb-2">
+                      <p class="m-0 fw-bold">Charlie Hookam</p>
+                      <p class="m-0 fw-light d-inline-block">In Camera</p>
+                      <p class="m-0 fw-light d-inline-block">Yumy Zouma</p>
+                      <div
+                        class="d-flex align-items-center justify-content-left"
+                      >
+                        <p class="m-0 fw-light order-2 ms-1">EP III</p>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="12"
+                          height="12"
+                          fill="currentColor"
+                          class="bi bi-disc"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                          />
+                          <path
+                            d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0M8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1m4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="position-absolute">
+                      <p class="d-none d-sm-block">4 ore</p>
+                    </div>
+                  </div>
+                  <div class="position-relative">
+                    <div
+                      class="d-flex align-items-top justify-content-left gap-1 mb-3"
+                    >
+                      <div class="flex-column me-3">
+                        <img
+                          src="https://plus.unsplash.com/premium_photo-1708194041705-74586903c3d3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGRqfGVufDB8fDB8fHww"
+                          alt=""
+                          style="height: 35px; width: 35px"
+                          class="img-fluid rounded-circle"
+                        />
+                      </div>
+                      <div class="flex-row mb-2">
+                        <p class="m-0 fw-bold">lightdark02</p>
+                        <p class="m-0 fw-light d-inline-block">Aimed to Kill</p>
+                        <p class="m-0 fw-light d-inline-block">Jade LeMac</p>
+
+                        <div
+                          class="d-flex align-items-center justify-content-left"
+                        >
+                          <p class="m-0 fw-light order-2 ms-1">Aimed to Kill</p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            fill="currentColor"
+                            class="bi bi-disc"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0M8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1m4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="position-absolute">
+                        <p>4 ore</p>
+                      </div>
+                    </div>
+                    <div class="position-relative">
+                      <div
+                        class="d-flex align-items-top justify-content-left gap-1 mb-3"
+                      >
+                        <div class="flex-column me-3">
+                          <img
+                            src="https://plus.unsplash.com/premium_photo-1681335986095-5a9585e77246?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG11c2ljfGVufDB8fDB8fHww"
+                            alt=""
+                            style="height: 35px; width: 35px"
+                            class="img-fluid rounded-circle"
+                          />
+                        </div>
+                        <div class="flex-row mb-2">
+                          <p class="m-0 fw-bold">Valeria Traverso</p>
+                          <p class="m-0 fw-light d-inline-block">New Kings</p>
+                          <p class="m-0 fw-light d-inline-block">
+                            Sleeping Wolf
+                          </p>
+                          <div
+                            class="d-flex align-items-center justify-content-left"
+                          >
+                            <p class="m-0 fw-light order-2 ms-1">
+                              Twin Badass mood
+                            </p>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="12"
+                              height="12"
+                              fill="currentColor"
+                              class="bi bi-music-note-beamed"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                d="M14 11V2h1v9zM6 3v10H5V3z"
+                              />
+                              <path
+                                d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="position-absolute">
+                          <p>4 ore</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-8 main-content">
+          <div class="row mt-4">
+            <div class="d-flex flex-column">
+              <div class="container">
+                <div
+                  id="header"
+                  class="d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <img
+                      class="m-2"
+                      src="./Icon/icons8-segno-a-v-a-sinsitra-50.png"
+                      alt=""
+                      width="32"
+                    />
+                    <img
+                      src="./Icon/icons8-segno-a-v-a-destra-50.png"
+                      alt=""
+                      width="32"
+                    />
+                  </div>
+
+                  <div id="" class="d-flex">
+                    <div class="dropdown rounded-pill">
+                      <img
+                        src="assets/imgs/main/image-1.jpg"
+                        width="32"
+                        alt=""
+                        class=""
+                      />
+                      <a
+                        class="btn text-white dropdown-toggle rounded-pill bg-black"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Costantino Scardigno
+                      </a>
+
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Account</a></li>
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Effettua l'upgrade a Premium</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Sessione privata</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Impostazioni</a>
+                        </li>
+                        <hr />
+                        <li><a class="dropdown-item" href="#">Esci</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div id="banner" class="row bg-black collapse show">
+                  <div class="col-sm-6 col-md-4 col-lg-3 p-3">
+                    <img
+                      class="img-fluid"
+                      src="./assets/imgs/main/image-10.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="col-sm-6 col-md-8 col-lg-9 d-flex flex-column text-white p-3"
+                  >
+                    <div class="d-flex justify-content-between">
+                      <h4>Album</h4>
+                      <button
+                        class="btn rounded-pill text-secondary bg-dark"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#banner"
+                        aria-expanded="false"
+                        aria-controls="contenuto"
+                      >
+                        Nascondi Annunci
+                      </button>
+                    </div>
+                    <h1 class="display-1 fw-bold">Mr Simpatia</h1>
+                    <p>Fabri Fibra</p>
+                    <p>Ascolta il nuovo singolo</p>
+                    <div>
+                      <button
+                        type="button"
+                        class="btn btn-success rounded-pill text-dark m-2"
+                      >
+                        Play
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-dark rounded-pill m-2"
+                      >
+                        Salva
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="row g-2">
+                  <div>
+                    <h2 class="text-white">Buonasera</h2>
+                  </div>
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="d-flex align-items-end bg-dark">
+                      <img
+                        src="https://e-cdns-images.dzcdn.net/images/cover/c2a8bed06b79c01bf680ec158bffc240-c9cf6e6ece6f71b1907210d39563fdb7-dc1eaac2b973fb4e475ea7807916714a-aca1ffbbe3bce2862888e518247af9cb/56x56-000000-80-0-0.jpg"
+                        alt=""
+                      />
+                      <p class="ms-2">Mix Hip-hop Italia</p>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="d-flex align-items-end bg-dark">
+                      <img
+                        src="https://e-cdns-images.dzcdn.net/images/cover/c2a8bed06b79c01bf680ec158bffc240-c9cf6e6ece6f71b1907210d39563fdb7-dc1eaac2b973fb4e475ea7807916714a-aca1ffbbe3bce2862888e518247af9cb/56x56-000000-80-0-0.jpg"
+                        alt=""
+                      />
+                      <p class="ms-2">Mix Hip-hop Italia</p>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="d-flex align-items-end bg-dark">
+                      <img
+                        src="https://e-cdns-images.dzcdn.net/images/cover/c2a8bed06b79c01bf680ec158bffc240-c9cf6e6ece6f71b1907210d39563fdb7-dc1eaac2b973fb4e475ea7807916714a-aca1ffbbe3bce2862888e518247af9cb/56x56-000000-80-0-0.jpg"
+                        alt=""
+                      />
+                      <p class="ms-2">Mix Hip-hop Italia</p>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="d-flex align-items-end bg-dark">
+                      <img
+                        src="https://e-cdns-images.dzcdn.net/images/cover/c2a8bed06b79c01bf680ec158bffc240-c9cf6e6ece6f71b1907210d39563fdb7-dc1eaac2b973fb4e475ea7807916714a-aca1ffbbe3bce2862888e518247af9cb/56x56-000000-80-0-0.jpg"
+                        alt=""
+                      />
+                      <p class="ms-2">Mix Hip-hop Italia</p>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="d-flex align-items-end bg-dark">
+                      <img
+                        src="https://e-cdns-images.dzcdn.net/images/cover/c2a8bed06b79c01bf680ec158bffc240-c9cf6e6ece6f71b1907210d39563fdb7-dc1eaac2b973fb4e475ea7807916714a-aca1ffbbe3bce2862888e518247af9cb/56x56-000000-80-0-0.jpg"
+                        alt=""
+                      />
+                      <p class="ms-2">Mix Hip-hop Italia</p>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="d-flex align-items-end bg-dark">
+                      <img
+                        src="https://e-cdns-images.dzcdn.net/images/cover/c2a8bed06b79c01bf680ec158bffc240-c9cf6e6ece6f71b1907210d39563fdb7-dc1eaac2b973fb4e475ea7807916714a-aca1ffbbe3bce2862888e518247af9cb/56x56-000000-80-0-0.jpg"
+                        alt=""
+                      />
+                      <p class="ms-2">Mix Hip-hop Italia</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-between m-3">
+                  <h2>Altro di ciò che ti piace</h2>
+                  <button type="button" class="btn text-secondary">
+                    Visualizza tutto
+                  </button>
+                </div>
+                <div class="row">
+                  <div class="col-sm-4 col-md-4 col-lg-3">
+                    <div class="card text-white bg-dark">
+                      <img
+                        src="./assets/imgs/main/image-2.jpg"
+                        class="card-img-top p-2"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Hit dell'Estate</h5>
+                        <p class="card-text">La playlist più del 2024</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3">
+                    <div class="card text-white bg-dark">
+                      <img
+                        src="./assets/imgs/main/image-2.jpg"
+                        class="card-img-top p-2"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Hit dell'Estate</h5>
+                        <p class="card-text">La playlist più del 2024</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3">
+                    <div class="card text-white bg-dark">
+                      <img
+                        src="./assets/imgs/main/image-2.jpg"
+                        class="card-img-top p-2"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Hit dell'Estate</h5>
+                        <p class="card-text">La playlist più del 2024</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3">
+                    <div class="card text-white bg-dark">
+                      <img
+                        src="./assets/imgs/main/image-2.jpg"
+                        class="card-img-top p-2"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Hit dell'Estate</h5>
+                        <p class="card-text">La playlist più del 2024</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3">
+                    <div class="card text-white bg-dark">
+                      <img
+                        src="./assets/imgs/main/image-2.jpg"
+                        class="card-img-top p-2"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Hit dell'Estate</h5>
+                        <p class="card-text">La playlist più del 2024</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3">
+                    <div class="card text-white bg-dark">
+                      <img
+                        src="./assets/imgs/main/image-2.jpg"
+                        class="card-img-top p-2"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Hit dell'Estate</h5>
+                        <p class="card-text">La playlist più del 2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Friend Activity -->
+        <div class="col-2">
+          <div>
+            <div>
+              <div class="text-white">
+                <div
+                  class="d-flex align-items-end justify-content-between mb-2"
+                >
+                  <h6 class="m-0 mt-2">Attività amici</h6>
+                  <div class="d-flex gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="21"
+                      height="21"
+                      fill="currentColor"
+                      class="bi bi-person"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="21"
+                      height="21"
+                      fill="currentColor"
+                      class="bi bi-x-lg"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <hr class="m-0 my-3" />
+                <div class="position-relative">
+                  <div
+                    class="d-flex align-items-top justify-content-left gap-1 mb-3"
+                  >
+                    <div class="flex-column me-3">
+                      <img
+                        src="https://images.unsplash.com/photo-1731573818042-3237bbed7ce1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                        style="height: 35px; width: 35px"
+                        class="img-fluid rounded-circle"
+                      />
+                    </div>
+                    <div class="flex-row mb-2">
+                      <p class="m-0 fw-bold">Charlie Hookam</p>
+                      <p class="m-0 fw-light d-inline-block">In Camera</p>
+                      <p class="m-0 fw-light d-inline-block">Yumy Zouma</p>
+                      <div
+                        class="d-flex align-items-center justify-content-left"
+                      >
+                        <p class="m-0 fw-light order-2 ms-1">EP III</p>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="12"
+                          height="12"
+                          fill="currentColor"
+                          class="bi bi-disc"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                          />
+                          <path
+                            d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0M8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1m4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="position-absolute">
+                      <p class="d-none d-sm-block">4 ore</p>
+                    </div>
+                  </div>
+                  <div class="position-relative">
+                    <div
+                      class="d-flex align-items-top justify-content-left gap-1 mb-3"
+                    >
+                      <div class="flex-column me-3">
+                        <img
+                          src="https://plus.unsplash.com/premium_photo-1708194041705-74586903c3d3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGRqfGVufDB8fDB8fHww"
+                          alt=""
+                          style="height: 35px; width: 35px"
+                          class="img-fluid rounded-circle"
+                        />
+                      </div>
+                      <div class="flex-row mb-2">
+                        <p class="m-0 fw-bold">lightdark02</p>
+                        <p class="m-0 fw-light d-inline-block">Aimed to Kill</p>
+                        <p class="m-0 fw-light d-inline-block">Jade LeMac</p>
+
+                        <div
+                          class="d-flex align-items-center justify-content-left"
+                        >
+                          <p class="m-0 fw-light order-2 ms-1">Aimed to Kill</p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            fill="currentColor"
+                            class="bi bi-disc"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0M8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1m4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="position-absolute">
+                        <p>4 ore</p>
+                      </div>
+                    </div>
+                    <div class="position-relative">
+                      <div
+                        class="d-flex align-items-top justify-content-left gap-1 mb-3"
+                      >
+                        <div class="flex-column me-3">
+                          <img
+                            src="https://plus.unsplash.com/premium_photo-1681335986095-5a9585e77246?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG11c2ljfGVufDB8fDB8fHww"
+                            alt=""
+                            style="height: 35px; width: 35px"
+                            class="img-fluid rounded-circle"
+                          />
+                        </div>
+                        <div class="flex-row mb-2">
+                          <p class="m-0 fw-bold">Valeria Traverso</p>
+                          <p class="m-0 fw-light d-inline-block">New Kings</p>
+                          <p class="m-0 fw-light d-inline-block">
+                            Sleeping Wolf
+                          </p>
+                          <div
+                            class="d-flex align-items-center justify-content-left"
+                          >
+                            <p class="m-0 fw-light order-2 ms-1">
+                              Twin Badass mood
+                            </p>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="12"
+                              height="12"
+                              fill="currentColor"
+                              class="bi bi-music-note-beamed"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                d="M14 11V2h1v9zM6 3v10H5V3z"
+                              />
+                              <path
+                                d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="position-absolute">
+                          <p>4 ore</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

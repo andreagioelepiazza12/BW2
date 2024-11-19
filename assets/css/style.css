@@ -96,3 +96,75 @@ body {
   }
 
   
+
+ 
+  
+
+  
+  .menusx {
+    display: flex;
+    
+    flex-direction: row;
+  }
+  
+  .menusx ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+  }
+  
+  .menusx ul li a span {
+    position: relative;
+    left: 10px;
+    top: 3px;
+  }
+  
+  .menu li {
+    padding-left: 0 !important;
+  }
+  
+  .menusx ul li a {
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+  }
+  
+  .menusx ul li {
+    padding: 6px;
+  }
+  
+  .line {
+    width: 100%;
+    border-color: gray;
+  }
+  
+  
+  
+  .playlists ul {
+    padding: 0;
+  }
+  
+  .playlists ul li a {
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+    font-weight: 300;
+    width: 100%;
+  }
+  
+  .playlists ul li a img {
+    width: 15px;
+  }
+  
+  .playlists ul li {
+    padding: 8px;
+  }
+  
+  .group {
+    margin-left: 85%;
+  }
+  
+  .arrow {
+    margin-left: 46.5%;
+  }
+  

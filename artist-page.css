@@ -80,6 +80,11 @@ h1 {
   padding-inline: 8px;
 }
 
+#img-cont {
+  height: 30px;
+  width: 30px;
+}
+
 /*player*/
 .player {
   position: fixed;

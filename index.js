@@ -24,6 +24,7 @@ const homePage = function () {
         h1Banner.innerText= data.data[0].album.title
         const artistbanner =document.getElementById("artistbanner")
         artistbanner.innerText= data.data[0].artist.name
+        
     })
 
 

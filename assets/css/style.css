@@ -12,89 +12,29 @@ body {
 }
 
 
-.player {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #212121;
-    color: white;
-    padding: 10px;
-    border-top: 2px solid #333;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-  }
+.flex-row p:nth-child(1) {
+  font-size: 12px;
+}
 
-  .player-info {
-    display: flex;
-    align-items: center;
-  }
+.flex-row div p:nth-child(2) {
+  font-size: 9px;
+}
 
-  .player-info img {
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    margin-right: 10px;
-  }
+.flex-row > p:nth-child(2) {
+  font-size: 11px;
+}
 
-  .player-info .title {
-    font-size: 14px;
-    font-weight: bold;
-  }
+.flex-row > p:nth-child(2)::after {
+  content: " • ";
+}
 
-  .player-info .artist {
-    font-size: 12px;
-    color: #aaa;
-  }
+.flex-row p + p {
+  font-size: 11px;
+}
 
-  .playerControlsContainer {
-    display: table-column;
-    align-items: center;
-  }
-
-  .player-controls {
-    display: flex;
-    align-items: center;
-  }
-
-  .player-controls button {
-    position: relative;
-    left: 5px;
-    bottom: 5px;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 18px;
-    margin: 0 10px;
-  }
-
-  .player-info input[type="range"] {
-    position: relative;
-    bottom: 10px;
-    width: 150px;
-    background-color: #333;
-    border: none;
-    height: 4px;
-    border-radius: 10px;
-  }
-  
-  .svg {
-    margin-right: 5px;
-  }
-
-  .time-bar {
-    position: relative;
-    bottom: 10px;
-    width: 150px;
-    background-color: #333;
-    border: none;
-    height: 4px;
-    border-radius: 10px;
-
-  }
-
+#profile-pic {
+  min-width: 35px;
+}
   
 
  

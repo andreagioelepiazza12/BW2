@@ -6,7 +6,7 @@
     <title>Spotify Clone</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/circular-font.css" />
-    <link rel="stylesheet" href="./right-bar.css" />
+    <link rel="stylesheet" href="./artist-page.css" />
   </head>
   <body>
     <div class="container-fluid">
@@ -132,20 +132,46 @@
         </div>
 
         <!-- Main Content -->
-        <div class="col-8 main-content">
-          <div class="row mt-4">
-            <div class="d-flex flex-column">
-              <div class="container">
+        <div class="col-8 main-content p-0">
+          <div id="first-l" class="row m-0">
+            <div class="d-flex flex-column p-0 px-4">
+              <div id="head-container" class="container p-0">
                 <div id="header" class="d-flex justify-content-between align-items-center">
-                  <div>
-                    <img class="m-2" src="./Icon/icons8-segno-a-v-a-sinsitra-50.png" alt="" width="32" />
-                    <img src="./Icon/icons8-segno-a-v-a-destra-50.png" alt="" width="32" />
+                  <div class="d-flex gap-2">
+                    <svg
+                      id="left-arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="currentColor"
+                      class="bi bi-arrow-left-circle"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"
+                      />
+                    </svg>
+                    <svg
+                      id="right-arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="currentColor"
+                      class="bi bi-arrow-right-circle"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                      />
+                    </svg>
                   </div>
 
-                  <div id="" class="d-flex">
+                  <div id="head-drop" class="d-flex">
                     <div class="dropdown rounded-pill">
-                      <img src="assets/imgs/main/image-1.jpg" width="32" alt="" class="" />
                       <a class="btn text-white dropdown-toggle rounded-pill bg-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/imgs/main/image-1.jpg" width="32" alt="" class="" />
                         Costantino Scardigno
                       </a>
 
@@ -167,163 +193,38 @@
                     </div>
                   </div>
                 </div>
-                <div id="banner" class="row bg-black collapse show">
-                  <div class="col-sm-6 col-md-4 col-lg-3 p-3">
-                    <img class="img-fluid" src="./assets/imgs/main/image-10.jpg" alt="" />
+                <div id="scheda-art">
+                  <div class="d-flex gap-1 align-items-center">
+                    <img
+                      src="https://cdn.iconscout.com/icon/free/png-256/free-verified-logo-icon-download-in-svg-png-gif-file-formats--approved-check-done-tick-social-media-pack-logos-icons-5582401.png"
+                      alt=""
+                      height="18px"
+                      width="18px"
+                    />
+                    <p id="verify" class="m-0 fw-light">Artista verificato</p>
                   </div>
-                  <div class="col-sm-6 col-md-8 col-lg-9 d-flex flex-column text-white p-3">
-                    <div class="d-flex justify-content-between">
-                      <h4>Album</h4>
-                      <button
-                        class="btn rounded-pill text-secondary bg-dark"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#banner"
-                        aria-expanded="false"
-                        aria-controls="contenuto"
-                      >
-                        Nascondi Annunci
-                      </button>
-                    </div>
-                    <h1 class="display-1 fw-bold">Mr Simpatia</h1>
-                    <p>Fabri Fibra</p>
-                    <p>Ascolta il nuovo singolo</p>
-                    <div>
-                      <button type="button" class="btn btn-success rounded-pill text-dark m-2">Play</button>
-                      <button type="button" class="btn btn-dark rounded-pill m-2">Salva</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="container">
-                <div class="row g-2">
-                  <div>
-                    <h2 class="text-white">Buonasera</h2>
-                  </div>
-                  <div class="col-sm-6 col-lg-4">
-                    <div class="d-flex align-items-end bg-dark">
-                      <img
-                        src="https://e-cdns-images.dzcdn.net/images/cover/c2a8bed06b79c01bf680ec158bffc240-c9cf6e6ece6f71b1907210d39563fdb7-dc1eaac2b973fb4e475ea7807916714a-aca1ffbbe3bce2862888e518247af9cb/56x56-000000-80-0-0.jpg"
-                        alt=""
-                      />
-                      <p class="ms-2">Mix Hip-hop Italia</p>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="d-flex align-items-end bg-dark">
-                      <img
-                        src="https://e-cdns-images.dzcdn.net/images/cover/c2a8bed06b79c01bf680ec158bffc240-c9cf6e6ece6f71b1907210d39563fdb7-dc1eaac2b973fb4e475ea7807916714a-aca1ffbbe3bce2862888e518247af9cb/56x56-000000-80-0-0.jpg"
-                        alt=""
-                      />
-                      <p class="ms-2">Mix Hip-hop Italia</p>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="d-flex align-items-end bg-dark">
-                      <img
-                        src="https://e-cdns-images.dzcdn.net/images/cover/c2a8bed06b79c01bf680ec158bffc240-c9cf6e6ece6f71b1907210d39563fdb7-dc1eaac2b973fb4e475ea7807916714a-aca1ffbbe3bce2862888e518247af9cb/56x56-000000-80-0-0.jpg"
-                        alt=""
-                      />
-                      <p class="ms-2">Mix Hip-hop Italia</p>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="d-flex align-items-end bg-dark">
-                      <img
-                        src="https://e-cdns-images.dzcdn.net/images/cover/c2a8bed06b79c01bf680ec158bffc240-c9cf6e6ece6f71b1907210d39563fdb7-dc1eaac2b973fb4e475ea7807916714a-aca1ffbbe3bce2862888e518247af9cb/56x56-000000-80-0-0.jpg"
-                        alt=""
-                      />
-                      <p class="ms-2">Mix Hip-hop Italia</p>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="d-flex align-items-end bg-dark">
-                      <img
-                        src="https://e-cdns-images.dzcdn.net/images/cover/c2a8bed06b79c01bf680ec158bffc240-c9cf6e6ece6f71b1907210d39563fdb7-dc1eaac2b973fb4e475ea7807916714a-aca1ffbbe3bce2862888e518247af9cb/56x56-000000-80-0-0.jpg"
-                        alt=""
-                      />
-                      <p class="ms-2">Mix Hip-hop Italia</p>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="d-flex align-items-end bg-dark">
-                      <img
-                        src="https://e-cdns-images.dzcdn.net/images/cover/c2a8bed06b79c01bf680ec158bffc240-c9cf6e6ece6f71b1907210d39563fdb7-dc1eaac2b973fb4e475ea7807916714a-aca1ffbbe3bce2862888e518247af9cb/56x56-000000-80-0-0.jpg"
-                        alt=""
-                      />
-                      <p class="ms-2">Mix Hip-hop Italia</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="d-flex justify-content-between m-3">
-                  <h2>Altro di ciò che ti piace</h2>
-                  <button type="button" class="btn text-secondary">Visualizza tutto</button>
-                </div>
-                <div class="row">
-                  <div class="col-sm-4 col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
-                      <img src="./assets/imgs/main/image-2.jpg" class="card-img-top p-2" alt="..." />
-                      <div class="card-body">
-                        <h5 class="card-title">Hit dell'Estate</h5>
-                        <p class="card-text">La playlist più del 2024</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
-                      <img src="./assets/imgs/main/image-2.jpg" class="card-img-top p-2" alt="..." />
-                      <div class="card-body">
-                        <h5 class="card-title">Hit dell'Estate</h5>
-                        <p class="card-text">La playlist più del 2024</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
-                      <img src="./assets/imgs/main/image-2.jpg" class="card-img-top p-2" alt="..." />
-                      <div class="card-body">
-                        <h5 class="card-title">Hit dell'Estate</h5>
-                        <p class="card-text">La playlist più del 2024</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
-                      <img src="./assets/imgs/main/image-2.jpg" class="card-img-top p-2" alt="..." />
-                      <div class="card-body">
-                        <h5 class="card-title">Hit dell'Estate</h5>
-                        <p class="card-text">La playlist più del 2024</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
-                      <img src="./assets/imgs/main/image-2.jpg" class="card-img-top p-2" alt="..." />
-                      <div class="card-body">
-                        <h5 class="card-title">Hit dell'Estate</h5>
-                        <p class="card-text">La playlist più del 2024</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
-                      <img src="./assets/imgs/main/image-2.jpg" class="card-img-top p-2" alt="..." />
-                      <div class="card-body">
-                        <h5 class="card-title">Hit dell'Estate</h5>
-                        <p class="card-text">La playlist più del 2024</p>
-                      </div>
-                    </div>
-                  </div>
+                  <h1 class="m-0 mb-3 fw-bold">Nome Artista</h1>
+                  <p id="num-stream" class="m-0 mb-3 fw-light">123.456 ascoltatori mensili</p>
                 </div>
               </div>
             </div>
+          </div>
+          <div id="album-content" class="px-4">
+            <div id="action" class="d-flex align-items-center justify-content-between mt-3 mb-3">
+              <button class="btn rounded-circle p-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="#1BC257" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
+                </svg>
+              </button>
+
+              <button id="follow-btn" class="btn btn-black text-white border-white">FOLLOWING</button>
+              <button class="btn p-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#3F3F3F" class="bi bi-three-dots" viewBox="0 0 16 16">
+                  <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                </svg>
+              </button>
+            </div>
+            <h5>Popolari</h5>
           </div>
         </div>
 

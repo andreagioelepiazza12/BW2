@@ -9,9 +9,9 @@ const volumeBar = document.querySelector(".volume-bar .progress");
 const audio = new Audio(); // Audio player dinamico
 
 // URL API per ottenere informazioni sulla canzone
-// const apiUrl = "https://deezerdevs-deezer.p.rapidapi.com/track/"; 
 
-const apiUrl = "https://deezerdevs-deezer.p.rapidapi.com/track/854914442";
+
+const apiUrl = "https://deezerdevs-deezer.p.rapidapi.com/track/";
 
 const params = new URLSearchParams(window.location.search);//mi serve per prendere l'id dell'oggetto dall'url
 
@@ -21,7 +21,7 @@ const songId = params.get("id")
 
 // Funzione per caricare i dati della canzone
 function loadSong(songId) {
-    fetch(apiUrl, {
+    fetch(`${apiUrl}${songId}`, {
         headers: {
             "x-rapidapi-key" : "e4a6b96369msh024e416adbab052p1463e7jsn0462779a6da0",
             "x-rapidapi-host" : "deezerdevs-deezer.p.rapidapi.com"

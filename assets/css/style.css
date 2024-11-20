@@ -100,76 +100,47 @@ body {
  
   
 
+  .text {
+    font-weight: 900;
+  }
+  .w-5 {
+    width: 4%;
+  }
   
-  .menusx {
-    display: flex;
+  .text-gray {
+    color: rgb(173, 173, 173);
+  }
+  
+  .bg-black {
+    background-color: black;
+  }
+  
+  .prima-colonna {
+    font-size: small;
+  }
+  
+  .colonna-nera {
+    font-size: x-small;
+  }
+  
+  .gradient {
+    background: linear-gradient(160deg, rgba(59, 28, 169, 1) 18%, rgba(126, 148, 154, 1) 97%);
+  }
+
+
+  .main-content {
+    background: rgb(116,5,5);
+background: linear-gradient(180deg, rgba(116,5,5,1) 0%, rgba(28,2,2,1) 35%, rgba(0,0,0,1) 95%);
+  }
+  #container-playlist {
+    background-color: #12121273;
+  }
+  .tablec {
+    background-color: #12121200;
+    width: 100%;
     
-    flex-direction: row;
   }
-  
-  .menusx ul {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    list-style-type: none;
-    overflow: hidden;
-  }
-  
-  .menusx ul li a span {
-    position: relative;
-    left: 10px;
-    top: 3px;
-  }
-  
-  .menu li {
-    padding-left: 0 !important;
-  }
-  
-  .menusx ul li a {
-    color: rgb(173, 173, 173);
-    text-decoration: none;
-  }
-  
-  .menusx ul li {
-    padding: 6px;
-  }
-  
-  .line {
-    width: 100%;
-    border-color: gray;
-  }
-  
-  
-  
-  .playlists ul {
-    padding: 0;
-  }
-  
-  .playlists ul li a {
-    color: rgb(173, 173, 173);
-    text-decoration: none;
-    font-weight: 300;
-    width: 100%;
-  }
-  
-  .playlists ul li a img {
-    width: 15px;
-  }
-  
-  .playlists ul li {
-    padding: 8px;
-  }
-  
-  .group {
-    margin-left: 85%;
-  }
-  
-  .arrow {
-    margin-left: 46.5%;
-  }
-  
-
-
-  tbody {
-    border-top: black;
+  tbody{
+    line-height: 33px;
+    border-top-width: 1px;
   }

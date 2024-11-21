@@ -79,7 +79,9 @@ background: linear-gradient(180deg, rgba(116,5,5,1) 0%, rgba(28,2,2,1) 35%, rgba
 }
 
 
-
+#h1banner {
+  font-size: clamp(1rem, 4vw, 3rem)
+}
 
 
   #container-playlist {

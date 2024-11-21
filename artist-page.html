@@ -6,13 +6,13 @@
     <title>Spotify Clone</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/circular-font.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/artist-page.css" />
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
         <!-- Sidebar -->
-        <div class="col-2 sidebar bg-black">
+        <div class="col-2 sidebar bg-black d-none d-md-block">
           <div>
             <div>
               <div class="text-white bg-black">
@@ -132,12 +132,12 @@
         </div>
 
         <!-- Main Content -->
-        <div class="col-8 main-content p-0">
+        <div class="col-12 col-md-8 main-content p-0">
           <div id="first-l" class="row m-0">
-            <div class="d-flex flex-column p-0 px-4">
-              <div id="head-container" class="container p-0">
+            <div class="d-flex flex-column p-0 px-2 px-md-4">
+              <div id="head-container" class="container m-0 p-0">
                 <div id="header" class="d-flex justify-content-between align-items-center">
-                  <div class="d-flex gap-2">
+                  <div class="d-flex gap-2 mt-2 mt-md-0">
                     <svg
                       id="left-arrow"
                       xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +158,7 @@
                       width="32"
                       height="32"
                       fill="currentColor"
-                      class="bi bi-arrow-right-circle"
+                      class="bi bi-arrow-right-circle d-none d-md-block"
                       viewBox="0 0 16 16"
                     >
                       <path
@@ -169,7 +169,7 @@
                   </div>
 
                   <div id="head-drop" class="d-flex">
-                    <div class="dropdown rounded-pill">
+                    <div class="dropdown rounded-pill d-none d-md-block">
                       <a class="btn text-white dropdown-toggle rounded-pill bg-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="assets/imgs/main/image-1.jpg" width="32" alt="" class="" />
                         Costantino Scardigno
@@ -194,7 +194,7 @@
                   </div>
                 </div>
                 <div id="scheda-art">
-                  <div class="d-flex gap-1 align-items-center">
+                  <div class="d-none d-md-flex gap-1 align-items-center">
                     <img
                       src="https://cdn.iconscout.com/icon/free/png-256/free-verified-logo-icon-download-in-svg-png-gif-file-formats--approved-check-done-tick-social-media-pack-logos-icons-5582401.png"
                       alt=""
@@ -203,14 +203,53 @@
                     />
                     <p id="verify" class="m-0 fw-light">Artista verificato</p>
                   </div>
-                  <h1 class="m-0 mb-3 fw-bold">Nome Artista</h1>
-                  <p id="num-stream" class="m-0 mb-3 fw-light">123.456 ascoltatori mensili</p>
+                  <h1 id="Nome-art" class="m-0 mb-2 mb-md-3 fw-bold">Nome Artista</h1>
+
+                  <p id="num-stream" class="m-0 mb-3 fw-light d-none d-md-block">123.456 ascoltatori mensili</p>
                 </div>
               </div>
             </div>
           </div>
-          <div id="album-content" class="px-4">
-            <div id="action" class="d-flex align-items-center justify-content-between mt-3 mb-3">
+          <p id="num-stream" class="m-0 mb-0 mb-md-3 fw-light d-block d-md-none px-2 px-md-4 mt-2 text-secondary">123.456 ascoltatori mensili</p>
+          <div id="album-content" class="px-2 px-md-4">
+            <div id="action" class="d-flex d-md-none align-items-center justify-content-between mt-0 mb-1 mb-md-3">
+              <div class="d-flex">
+                <button id="follow-btn" class="btn btn-black text-white">Seguiti</button>
+
+                <button class="btn p-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#3F3F3F" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                    <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                  </svg>
+                </button>
+              </div>
+              <div class="d-flex gap-2">
+                <div class="d-flex">
+                  <button class="btn p-0">
+                    <svg id="shuffle" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#3F3F3F" class="bi bi-shuffle" viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.6 9.6 0 0 0 7.556 8a9.6 9.6 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.6 10.6 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.6 9.6 0 0 0 6.444 8a9.6 9.6 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5"
+                      />
+                      <path
+                        d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192"
+                      />
+                    </svg>
+                    <div>
+                      <svg id="point" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#1BC257" class="bi bi-dot" viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+
+                <button class="btn rounded-circle p-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="#1BC257" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="action" class="d-none d-md-flex align-items-center justify-content-between mt-3 mb-3">
               <button class="btn rounded-circle p-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="#1BC257" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
                   <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
@@ -224,12 +263,12 @@
                 </svg>
               </button>
             </div>
-            <div id="pop-liked" class="d-flex justify-content-between">
-              <div id="pop-menu" class="d-flex flex-column gap-2">
+            <div id="pop-liked" class="d-flex flex-column flex-md-row ustify-content-between gap-3">
+              <div id="pop-menu" class="d-flex flex-column">
                 <h5 id="popolari">Popolari</h5>
                 <div id="pop-song" class="d-flex align-items-center justify-content-between">
-                  <div id="num-pic-name" class="d-flex align-items-center gap-2">
-                    <p class="text-secondary m-0">1</p>
+                  <div id="num-pic-name" class="d-flex align-items-center gap-4">
+                    <p id="order-num" class="text-secondary m-0">1</p>
                     <div id="img-cont">
                       <img
                         src="https://images.unsplash.com/photo-1731877818770-820faabe2d4c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"
@@ -237,14 +276,17 @@
                         class="img-fluid"
                       />
                     </div>
-                    <p class="m-0">Ocean Avenue</p>
+                    <div class="d-flex flex-column">
+                      <p class="m-0">Ocean Avenue</p>
+                      <p id="stream" class="m-0 text-secondary d-block d-sm-none">143.456.789</p>
+                    </div>
                   </div>
-                  <p id="stream" class="m-0 text-secondary">143.456.789</p>
+                  <p id="stream" class="m-0 text-secondary d-none d-sm-block">143.456.789</p>
                   <p id="timing" class="m-0 text-secondary">3.18</p>
                 </div>
                 <div id="pop-song" class="d-flex align-items-center justify-content-between">
-                  <div id="num-pic-name" class="d-flex align-items-center gap-2">
-                    <p class="text-secondary m-0">2</p>
+                  <div id="num-pic-name" class="d-flex align-items-center gap-4">
+                    <p id="order-num" class="text-secondary m-0">2</p>
                     <div id="img-cont">
                       <img
                         src="https://images.unsplash.com/photo-1731877818770-820faabe2d4c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"
@@ -252,14 +294,17 @@
                         class="img-fluid"
                       />
                     </div>
-                    <p class="m-0">Only One</p>
+                    <div class="d-flex flex-column">
+                      <p class="m-0">Only One</p>
+                      <p id="stream" class="m-0 text-secondary d-block d-sm-none">98.839.244</p>
+                    </div>
                   </div>
-                  <p id="stream" class="m-0 text-secondary">98.839.244</p>
+                  <p id="stream" class="m-0 text-secondary d-none d-sm-block">98.839.244</p>
                   <p id="timing" class="m-0 text-secondary">4.17</p>
                 </div>
                 <div id="pop-song" class="d-flex align-items-center justify-content-between">
-                  <div id="num-pic-name" class="d-flex align-items-center gap-2">
-                    <p class="text-secondary m-0">3</p>
+                  <div id="num-pic-name" class="d-flex align-items-center gap-4">
+                    <p id="order-num" class="text-secondary m-0">3</p>
                     <div id="img-cont">
                       <img
                         src="https://images.unsplash.com/photo-1731877818770-820faabe2d4c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"
@@ -267,14 +312,17 @@
                         class="img-fluid"
                       />
                     </div>
-                    <p class="m-0">Breathing</p>
+                    <div class="d-flex flex-column">
+                      <p class="m-0">Breathing</p>
+                      <p id="stream" class="m-0 text-secondary d-block d-sm-none">41.357.456</p>
+                    </div>
                   </div>
-                  <p id="stream" class="m-0 text-secondary">41.357.456</p>
+                  <p id="stream" class="m-0 text-secondary d-none d-sm-block">41.357.456</p>
                   <p id="timing" class="m-0 text-secondary">3.38</p>
                 </div>
                 <div id="pop-song" class="d-flex align-items-center justify-content-between">
-                  <div id="num-pic-name" class="d-flex align-items-center gap-2">
-                    <p class="text-secondary m-0">4</p>
+                  <div id="num-pic-name" class="d-flex align-items-center gap-4">
+                    <p id="order-num" class="text-secondary m-0">4</p>
                     <div id="img-cont">
                       <img
                         src="https://images.unsplash.com/photo-1731877818770-820faabe2d4c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"
@@ -282,14 +330,17 @@
                         class="img-fluid"
                       />
                     </div>
-                    <p class="m-0">Lights And Sound</p>
+                    <div class="d-flex flex-column">
+                      <p class="m-0">Lights And Sound</p>
+                      <p id="stream" class="m-0 text-secondary d-block d-sm-none">34.456.789</p>
+                    </div>
                   </div>
-                  <p id="stream" class="m-0 text-secondary">34.456.789</p>
+                  <p id="stream" class="m-0 text-secondary d-none d-sm-block">34.456.789</p>
                   <p id="timing" class="m-0 text-secondary">3.28</p>
                 </div>
                 <div id="pop-song" class="d-flex align-items-center justify-content-between">
-                  <div id="num-pic-name" class="d-flex align-items-center gap-2">
-                    <p class="text-secondary m-0">5</p>
+                  <div id="num-pic-name" class="d-flex align-items-center gap-4">
+                    <p id="order-num" class="text-secondary m-0">5</p>
                     <div id="img-cont">
                       <img
                         src="https://images.unsplash.com/photo-1731877818770-820faabe2d4c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"
@@ -297,14 +348,17 @@
                         class="img-fluid"
                       />
                     </div>
-                    <p class="m-0">Ocean Avenue</p>
+                    <div class="d-flex flex-column">
+                      <p class="m-0">Ocean Avenue</p>
+                      <p id="stream" class="m-0 text-secondary d-block d-sm-none">33.468.709</p>
+                    </div>
                   </div>
-                  <p id="stream" class="m-0 text-secondary">33.468.709</p>
+                  <p id="stream" class="m-0 text-secondary d-none d-sm-block">33.468.709</p>
                   <p id="timing" class="m-0 text-secondary">3.08</p>
                 </div>
               </div>
               <div id="liked" class="d-flex flex-column">
-                <h5 id="popolari">Brani che ti piacciono</h5>
+                <h5 id="popolari" class="d-none d-md-block">Brani che ti piacciono</h5>
                 <div id="like-menu" class="d-flex align-items-center gap-2">
                   <div id="like-photo">
                     <img
@@ -322,11 +376,51 @@
               </div>
             </div>
           </div>
+          <div id="move-bar" class="d-block d-md-none">
+            <div id="insiede-move-bar">
+              <div class="d-flex justify-content-around">
+                <button id="H-S-L" class="btn">
+                  <svg id="H-S-L-i25" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#3F3F3F" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"
+                    />
+                  </svg>
+                  <p class="m-0">Home</p>
+                </button>
+                <button id="H-S-L" class="btn">
+                  <svg id="H-S-L-img" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#3F3F3F" class="bi bi-search" viewBox="0 0 16 16">
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                    />
+                  </svg>
+                  <p class="m-0">Search</p>
+                </button id="H-S-L">
+                <button class="btn">
+                  <svg
+                    id="H-S-L-img"
+                    data-encore-id="icon"
+                    role="img"
+                    height="25"
+                    width="25"
+                    fill="#3F3F3F"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    class="Svg-sc-ytk21e-0 bneLcE"
+                  >
+                    <path
+                      d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"
+                    ></path>
+                  </svg>
+                  <p class="m-0">Library</p>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Friend Activity -->
 
-        <div class="col-2 bg-black">
+        <div class="col-2 bg-black d-none d-md-block">
           <div class="text-white">
             <div class="d-flex align-items-end justify-content-between mb-2 mt-2">
               <h6 class="m-0 mt-2">Attività amici</h6>
@@ -438,5 +532,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

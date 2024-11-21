@@ -209,3 +209,90 @@ h1 {
   height: 4px;
   border-radius: 10px;
 }
+
+@media (max-width: 650px) {
+  #scheda-art {
+    margin-top: 5rem;
+  }
+
+  #Nome-art {
+    font-size: 3rem;
+    line-height: 95%;
+  }
+
+  #num-stream {
+    font-size: 75%;
+    font-weight: bold;
+  }
+
+  #action {
+    width: 100%;
+  }
+
+  #point {
+    display: none;
+  }
+
+  #pop-menu {
+    order: 2;
+  }
+
+  #like-photo {
+    height: 45px;
+    width: 45px;
+  }
+
+  #popolari {
+    font-size: 95%;
+  }
+
+  #pop-menu {
+    width: 100%;
+  }
+
+  #timing {
+    display: none;
+  }
+
+  #num-pic-name {
+    width: 100%;
+  }
+
+  #order-num {
+    font-size: 1rem;
+  }
+
+  #img-cont {
+    height: 50px;
+    width: 50px;
+    margin-block: 10px;
+  }
+}
+
+@media (max-width: 760px) {
+  #pop-menu {
+    width: 100%;
+  }
+
+  #move-bar {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    bottom: 55px;
+  }
+
+  #insiede-move-bar {
+    position: absolute;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 3%, rgba(0, 0, 0, 0.30015756302521013) 100%);
+  }
+
+  #H-S-L:hover {
+    opacity: 90%;
+  }
+
+  #H-S-L-img:hover {
+    opacity: 90%;
+  }
+}

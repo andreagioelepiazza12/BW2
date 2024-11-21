@@ -15,7 +15,6 @@
     <div class="container-fluid">
       <div class="row">
         <!-- Sidebar -->
-
         <aside class="col-2 bg-black p-3">
           <div
             class="container-fluid text border-bottom border-secondary w-100 prima-colonna"
@@ -32,7 +31,7 @@
               <li class="mt-3">
                 <a
                   class="d-flex align-items-center flex-row text-decoration-none"
-                  href="#"
+                  href="index.html"
                 >
                   <img
                     class="me-2"
@@ -344,8 +343,8 @@
         </aside>
         <!-- Main Content -->
         <div class="col-8 main-content">
-          <div class="row mt-4">
-            <div class="d-flex align-items-center flex-column">
+          <div class="row mt-2">
+            <div class="d-flex flex-column">
               <div class="container">
                 <div
                   id="header"
@@ -403,237 +402,111 @@
                     </div>
                   </div>
                 </div>
-                <div id="banner" class="row bg-black collapse show">
+                <div id="banner" class="row collapse show align-items-end">
                   <div class="col-sm-6 col-md-4 col-lg-3 p-3">
-                    <img id="imgAlbum" class="img-fluid" src="" alt="" />
+                    <img
+                      id="imgAlbum"
+                      class="img-fluid shadow-lg"
+                      src=""
+                      alt=""
+                    />
                   </div>
                   <div
-                    class="col-sm-6 col-md-8 col-lg-9 d-flex flex-column text-white p-3"
+                    class="col-sm-6 col-md-8 col-lg-9 d-flex flex-column text-white"
                   >
                     <div class="d-flex justify-content-between">
-                      <h4>Album</h4>
-                      <button
-                        class="btn rounded-pill text-secondary bg-dark"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#banner"
-                        aria-expanded="false"
-                        aria-controls="contenuto"
-                      >
-                        Nascondi Annunci
-                      </button>
+                      <h5>Album</h5>
                     </div>
-
                     <h1 id="h1banner" class="fs-1 fw-bold"></h1>
                     <p id="artistbanner"></p>
-                    <p>Ascolta il nuovo singolo</p>
-
-                    <div>
-                      <button
-                        type="button"
-                        class="btn btn-success rounded-pill text-dark m-2"
-                      >
-                        Play
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-dark rounded-pill m-2"
-                      >
-                        Salva
-                      </button>
+                    <div class="">
+                      <img
+                        style="width: 30px"
+                        class="rounded-circle"
+                        src="./assets/imgs/search/image-50.jpg"
+                        alt=""
+                      />
+                      <span class="fs-6">Fabri Fibra - 2010</span>
+                      <span class="fw-light">20 brani, 58 min 40 sec</span>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="container">
-                <div class="row g-2 mt-2">
+              <!-------->
+              <div id="container-playlist" class="container mt-2">
+                <div class="row mb-2">
                   <div>
-                    <h2 class="text-white">Buonasera</h2>
+                    <button class="btn rounded-circle">
+                      <img src="./Icon/play-circle-fill.svg" alt="" />
+                    </button>
+                    <span
+                      ><img src="./Icon/icons8-mi-piace-32.png" alt=""
+                    /></span>
+                    <span class="p-2"
+                      ><img src="./Icon/icons8-scaricare-32.png" alt=""
+                    /></span>
+                    <span><img src="./Icon/three-dots.svg" alt="" /></span>
                   </div>
-                  <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="d-flex align-items-center bg-dark">
-                      <img
-                        style="width: 70px"
-                        src="./assets/imgs/search/image-42.png"
-                        alt=""
-                      />
-                      <p class="ms-2">Mix Hip-hop Italia</p>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="d-flex align-items-center bg-dark">
-                      <img
-                        style="width: 70px"
-                        src="./assets/imgs/search/image-36.jpg"
-                        alt=""
-                      />
-                      <p class="ms-2">Hot Hits Italia</p>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="d-flex align-items-center bg-dark">
-                      <img
-                        style="width: 70px"
-                        src="./assets/imgs/search/image-28.jpg"
-                        alt=""
-                      />
-                      <p class="ms-2">Afro Hits</p>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="d-flex align-items-center bg-dark">
-                      <img
-                        style="width: 70px"
-                        src="./assets/imgs/main/image-12.jpg"
-                        alt=""
-                      />
-                      <p class="ms-2">In tendenza</p>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="d-flex align-items-center bg-dark">
-                      <img
-                        style="width: 70px"
-                        src="./assets/imgs/main/image-19.jpg"
-                        alt=""
-                      />
-                      <p class="ms-2">Pop Rising</p>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="d-flex align-items-center bg-dark">
-                      <img
-                        style="width: 70px"
-                        class=""
-                        src="./assets/imgs/main/cuore.jpg"
-                        alt=""
-                      />
-                      <p class="ms-2">Brani che ti piacciono</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="d-flex justify-content-between my-3">
-                  <h2>Altro di ciò che ti piace</h2>
-                  <button type="button" class="btn text-secondary">
-                    Visualizza tutto
-                  </button>
-                </div>
-                <div class="row g-2">
-                  <div class="col-sm-4 col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
-                      <img
-                        src="./assets/imgs/main/image-2.jpg"
-                        class="card-img-top p-2"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Hit dell'Estate</h5>
-                        <p class="card-text">La playlist più hot del 2024</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
-                      <img
-                        src="./assets/imgs/main/image-3.jpg"
-                        class="card-img-top p-2"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Relax Songs</h5>
-                        <p class="card-text">La playlist del chill</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
-                      <img
-                        src="./assets/imgs/main/image-4.jpg"
-                        class="card-img-top p-2"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Peaceful Piano</h5>
-                        <p class="card-text">Piano playlist</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
-                      <img
-                        src="./assets/imgs/main/image-5.jpg"
-                        class="card-img-top p-2"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Lofi Beats</h5>
-                        <p class="card-text">Lofi playlist del 2024</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
-                      <img
-                        src="./assets/imgs/main/image-9.jpg"
-                        class="card-img-top p-2"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Canta sotto la doccia</h5>
-                        <p class="card-text">
-                          La playlist perfetta per la doccia
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
-                      <img
-                        src="./assets/imgs/main/image-10.jpg"
-                        class="card-img-top p-2"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Good Vibes</h5>
-                        <p class="card-text">Good Vibes Songs 2024</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
-                      <img
-                        src="./assets/imgs/main/image-14.jpg"
-                        class="card-img-top p-2"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Allenamento</h5>
-                        <p class="card-text">La playlist per spingere</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
-                      <img
-                        src="./assets/imgs/main/image-13.jpg"
-                        class="card-img-top p-2"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Pilizie di Casa</h5>
-                        <p class="card-text">
-                          Playlist per attività casalinghe
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                  <table class="table-hover align-middle">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Titolo</th>
+                        <th>Riproduzioni</th>
+                        <th>Durata</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td id="tc">Montanelli - Intro</td>
+                        <td>694,578</td>
+                        <td>1:28</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Sciare</td>
+                        <td>5,585,178</td>
+                        <td>4:41</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Gioventù Brucata</td>
+                        <td>3,412,342</td>
+                        <td>5:24</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Ninnananna per genitori dissidenti</td>
+                        <td>2,365,629</td>
+                        <td>4:04</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>L'uomo che inventò il fuoco</td>
+                        <td>3,417,862</td>
+                        <td>5:23</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>Irene</td>
+                        <td>17,249,689</td>
+                        <td>5:11</td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>Senti che cantare questi</td>
+                        <td>760,496</td>
+                        <td>1:11</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>Pula</td>
+                        <td>899,318</td>
+                        <td>5:46</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>

@@ -1,0 +1,86 @@
+body {
+  font-family: "Circular";
+    background-color: #121212;
+        color: white;
+}
+
+
+.sidebar {
+  height: 100vh;
+  
+  padding: 1rem;
+}
+
+
+.flex-row p:nth-child(1) {
+  font-size: 12px;
+}
+
+.flex-row div p:nth-child(2) {
+  font-size: 9px;
+}
+
+.flex-row > p:nth-child(2) {
+  font-size: 11px;
+}
+
+.flex-row > p:nth-child(2)::after {
+  content: " • ";
+}
+
+.flex-row p + p {
+  font-size: 11px;
+}
+
+#profile-pic {
+  min-width: 35px;
+}
+  
+
+ 
+  
+
+  .text {
+    font-weight: 900;
+  }
+  .w-5 {
+    width: 4%;
+  }
+  
+  .text-gray {
+    color: rgb(173, 173, 173);
+  }
+  
+  .bg-black {
+    background-color: black;
+  }
+  
+  .prima-colonna {
+    font-size: small;
+  }
+  
+  .colonna-nera {
+    font-size: x-small;
+  }
+  
+  .gradient {
+    background: linear-gradient(160deg, rgba(59, 28, 169, 1) 18%, rgba(126, 148, 154, 1) 97%);
+  }
+
+
+  .main-content {
+    background: rgb(116,5,5);
+background: linear-gradient(180deg, rgba(116,5,5,1) 0%, rgba(28,2,2,1) 35%, rgba(0,0,0,1) 95%);
+  }
+  #container-playlist {
+    background-color: #12121273;
+  }
+  .tablec {
+    background-color: #12121200;
+    width: 100%;
+    
+  }
+  tbody{
+    line-height: 33px;
+    border-top-width: 1px;
+  }

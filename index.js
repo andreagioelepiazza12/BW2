@@ -29,8 +29,6 @@ const homePage = function () {
 
 
 
-
-
     .catch((error) => {
         console.log(error);
     });
@@ -40,4 +38,6 @@ const homePage = function () {
 window.onload = () => {
     homePage();
 };
+
+
 

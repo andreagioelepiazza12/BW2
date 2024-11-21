@@ -16,7 +16,7 @@
       <div class="row">
         <!-- Sidebar -->
 
-        <aside class="col-2 bg-black p-3">
+        <aside id="sidebar" class="col-2 bg-black p-3">
           <div
             class="container-fluid text border-bottom border-secondary w-100 prima-colonna"
           >
@@ -404,11 +404,11 @@
                   </div>
                 </div>
                 <div id="banner" class="row bg-black collapse show">
-                  <div class="col-sm-6 col-md-4 col-lg-3 p-3">
+                  <div class="col-sm-5 col-md-4 col-lg-4 col-xl-3 p-3">
                     <img id="imgAlbum" class="img-fluid" src="" alt="" />
                   </div>
                   <div
-                    class="col-sm-6 col-md-8 col-lg-9 d-flex flex-column text-white p-3"
+                    class="col-sm-7 col-md-8 col-lg-8 col-xl-9 d-flex flex-column text-white pt-3"
                   >
                     <div class="d-flex justify-content-between">
                       <h4>Album</h4>
@@ -423,19 +423,22 @@
                         Nascondi Annunci
                       </button>
                     </div>
-
-                    <h1 id="h1banner" class="fs-1 fw-bold"></h1>
+                    <div>
+                      <h1 id="h1banner" class="fs-1 fw-bold"></h1>
+                    </div>
                     <p id="artistbanner"></p>
                     <p>Ascolta il nuovo singolo</p>
 
                     <div>
                       <button
+                        id="btnplay"
                         type="button"
                         class="btn btn-success rounded-pill text-dark m-2"
                       >
                         Play
                       </button>
                       <button
+                        id="btnsave"
                         type="button"
                         class="btn btn-dark rounded-pill m-2"
                       >
@@ -451,7 +454,7 @@
                   <div>
                     <h2 class="text-white">Buonasera</h2>
                   </div>
-                  <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="col-sm-6 col-md-6 col-lg-4">
                     <div class="d-flex align-items-center bg-dark">
                       <img
                         style="width: 70px"
@@ -462,7 +465,7 @@
                     </div>
                   </div>
 
-                  <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="col-sm-6 col-md-6 col-lg-4">
                     <div class="d-flex align-items-center bg-dark">
                       <img
                         style="width: 70px"
@@ -473,7 +476,7 @@
                     </div>
                   </div>
 
-                  <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="col-sm-6 col-md-6 col-lg-4">
                     <div class="d-flex align-items-center bg-dark">
                       <img
                         style="width: 70px"
@@ -484,7 +487,7 @@
                     </div>
                   </div>
 
-                  <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="col-sm-6 col-md-6 col-lg-4">
                     <div class="d-flex align-items-center bg-dark">
                       <img
                         style="width: 70px"
@@ -495,7 +498,7 @@
                     </div>
                   </div>
 
-                  <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="col-sm-6 col-md-6 col-lg-4">
                     <div class="d-flex align-items-center bg-dark">
                       <img
                         style="width: 70px"
@@ -506,7 +509,7 @@
                     </div>
                   </div>
 
-                  <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="col-sm-6 col-md-6 col-lg-4">
                     <div class="d-flex align-items-center bg-dark">
                       <img
                         style="width: 70px"
@@ -525,112 +528,286 @@
                     Visualizza tutto
                   </button>
                 </div>
-                <div class="row g-2">
-                  <div class="col-sm-4 col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
+                <div class="row g-2 gap-2">
+                  <div
+                    class="card d-flex align-items-start flex-wrap flex-row flex-sm-row flex-md-column flex-lg-column col-md-6 col-md-6c col-lg-4 col-lg-4c col-xl-3 col-xl-3c col-xxl-3 col-xxl-3c text-white bg-dark"
+                  >
+                    <!-- Immagine -->
+                    <div class="col-4 col-sm-4 col-md-12 col-lg-12 col-xl-12">
                       <img
-                        src="./assets/imgs/main/image-2.jpg"
-                        class="card-img-top p-2"
-                        alt="..."
+                        src="./assets/imgs/main/image-11.jpg"
+                        class="img-fluid rounded py-1 imgcard"
+                        alt="Card Image"
                       />
-                      <div class="card-body">
-                        <h5 class="card-title">Hit dell'Estate</h5>
-                        <p class="card-text">La playlist più hot del 2024</p>
-                      </div>
                     </div>
-                  </div>
-                  <div class="col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
-                      <img
-                        src="./assets/imgs/main/image-3.jpg"
-                        class="card-img-top p-2"
-                        alt="..."
-                      />
+                    <!-- Contenuto -->
+                    <div class="col-8 col-sm-8 col-md-9 col-lg-9 col-xl-12">
                       <div class="card-body">
-                        <h5 class="card-title">Relax Songs</h5>
-                        <p class="card-text">La playlist del chill</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
-                      <img
-                        src="./assets/imgs/main/image-4.jpg"
-                        class="card-img-top p-2"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Peaceful Piano</h5>
-                        <p class="card-text">Piano playlist</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
-                      <img
-                        src="./assets/imgs/main/image-5.jpg"
-                        class="card-img-top p-2"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Lofi Beats</h5>
-                        <p class="card-text">Lofi playlist del 2024</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
-                      <img
-                        src="./assets/imgs/main/image-9.jpg"
-                        class="card-img-top p-2"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Canta sotto la doccia</h5>
+                        <h5 class="card-title">Image Dragons</h5>
+                        <p class="card-text">Mercury-2024</p>
                         <p class="card-text">
-                          La playlist perfetta per la doccia
+                          <small class="text-body-light"
+                            >Last updated 3 mins ago</small
+                          >
                         </p>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
-                      <img
-                        src="./assets/imgs/main/image-10.jpg"
-                        class="card-img-top p-2"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Good Vibes</h5>
-                        <p class="card-text">Good Vibes Songs 2024</p>
+                    <div
+                      class="d-flex justify-content-between align-items-baseline col-12 mt-2 collapse-at-400"
+                    >
+                      <div>
+                        <img src="./Icon/icons8-mi-piace-32.png" alt="" />
+                        <img src="./Icon/three-dots-vertical.svg" alt="" />
+                      </div>
+                      <div>
+                        <p>16 Brani</p>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
-                      <img
-                        src="./assets/imgs/main/image-14.jpg"
-                        class="card-img-top p-2"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Allenamento</h5>
-                        <p class="card-text">La playlist per spingere</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-3">
-                    <div class="card text-white bg-dark">
+                  <div
+                    class="card d-flex align-items-start flex-wrap flex-row flex-sm-row flex-md-column flex-lg-column col-md-6 col-md-6c col-lg-4 col-lg-4c col-xl-3 col-xl-3c col-xxl-3 col-xxl-3c text-white bg-dark"
+                  >
+                    <!-- Immagine -->
+                    <div class="col-4 col-sm-4 col-md-12 col-lg-12 col-xl-12">
                       <img
                         src="./assets/imgs/main/image-13.jpg"
-                        class="card-img-top p-2"
-                        alt="..."
+                        class="img-fluid rounded py-1 imgcard"
+                        alt="Card Image"
                       />
+                    </div>
+                    <!-- Contenuto -->
+                    <div class="col-8 col-sm-8 col-md-9 col-lg-9 col-xl-12">
                       <div class="card-body">
-                        <h5 class="card-title">Pilizie di Casa</h5>
+                        <h5 class="card-title">Pulizie di Casa</h5>
                         <p class="card-text">
                           Playlist per attività casalinghe
                         </p>
+                        <p class="card-text">
+                          <small class="text-body-light"
+                            >Last updated 5 mins ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-baseline col-12 mt-2 collapse-at-400"
+                    >
+                      <div>
+                        <img src="./Icon/icons8-mi-piace-32.png" alt="" />
+                        <img src="./Icon/three-dots-vertical.svg" alt="" />
+                      </div>
+                      <div>
+                        <p>16 Brani</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card d-flex align-items-start flex-wrap flex-row flex-sm-row flex-md-column flex-lg-column col-md-6 col-md-6c col-lg-4 col-lg-4c col-xl-3 col-xl-3c col-xxl-3 col-xxl-3c text-white bg-dark"
+                  >
+                    <!-- Immagine -->
+                    <div class="col-4 col-sm-4 col-md-12 col-lg-12 col-xl-12">
+                      <img
+                        src="./assets/imgs/main/image-17.jpg"
+                        class="img-fluid rounded py-1 imgcard"
+                        alt="Card Image"
+                      />
+                    </div>
+                    <!-- Contenuto -->
+                    <div class="col-8 col-sm-8 col-md-9 col-lg-9 col-xl-12">
+                      <div class="card-body">
+                        <h5 class="card-title">New Music Friday</h5>
+                        <p class="card-text">New Playlist Friday</p>
+                        <p class="card-text">
+                          <small class="text-body-light"
+                            >Last updated 3 mins ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-baseline col-12 mt-2 collapse-at-400"
+                    >
+                      <div>
+                        <img src="./Icon/icons8-mi-piace-32.png" alt="" />
+                        <img src="./Icon/three-dots-vertical.svg" alt="" />
+                      </div>
+                      <div>
+                        <p>16 Brani</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card d-flex align-items-start flex-wrap flex-row flex-sm-row flex-md-column flex-lg-column col-md-6 col-md-6c col-lg-4 col-lg-4c col-xl-3 col-xl-3c col-xxl-3 col-xxl-3c text-white bg-dark"
+                  >
+                    <!-- Immagine -->
+                    <div class="col-4 col-sm-4 col-md-12 col-lg-12 col-xl-12">
+                      <img
+                        src="./assets/imgs/main/image-19.jpg"
+                        class="img-fluid rounded py-1 imgcard"
+                        alt="Card Image"
+                      />
+                    </div>
+                    <!-- Contenuto -->
+                    <div class="col-8 col-sm-8 col-md-9 col-lg-9 col-xl-12">
+                      <div class="card-body">
+                        <h5 class="card-title">Street Culto</h5>
+                        <p class="card-text">Hit Rap Italia</p>
+                        <p class="card-text">
+                          <small class="text-body-light"
+                            >Last updated 10 mins ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-baseline col-12 mt-2 collapse-at-400"
+                    >
+                      <div>
+                        <img src="./Icon/icons8-mi-piace-32.png" alt="" />
+                        <img src="./Icon/three-dots-vertical.svg" alt="" />
+                      </div>
+                      <div>
+                        <p>16 Brani</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card d-flex align-items-start flex-wrap flex-row flex-sm-row flex-md-column flex-lg-column col-md-6 col-md-6c col-lg-4 col-lg-4c col-xl-3 col-xl-3c col-xxl-3 col-xxl-3c text-white bg-dark"
+                  >
+                    <!-- Immagine -->
+                    <div class="col-4 col-sm-4 col-md-12 col-lg-12 col-xl-12">
+                      <img
+                        src="./assets/imgs/main/image-2.jpg"
+                        class="img-fluid rounded py-1 imgcard"
+                        alt="Card Image"
+                      />
+                    </div>
+                    <!-- Contenuto -->
+                    <div class="col-8 col-sm-8 col-md-9 col-lg-9 col-xl-12">
+                      <div class="card-body">
+                        <h5 class="card-title">Hit Estive</h5>
+                        <p class="card-text">Playlist dell'estate 2024</p>
+                        <p class="card-text">
+                          <small class="text-body-light"
+                            >Last updated 3 mins ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-baseline col-12 mt-2 collapse-at-400"
+                    >
+                      <div>
+                        <img src="./Icon/icons8-mi-piace-32.png" alt="" />
+                        <img src="./Icon/three-dots-vertical.svg" alt="" />
+                      </div>
+                      <div>
+                        <p>16 Brani</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card d-flex align-items-start flex-wrap flex-row flex-sm-row flex-md-column flex-lg-column col-md-6 col-md-6c col-lg-4 col-lg-4c col-xl-3 col-xl-3c col-xxl-3 col-xxl-3c text-white bg-dark"
+                  >
+                    <!-- Immagine -->
+                    <div class="col-4 col-sm-4 col-md-12 col-lg-12 col-xl-12">
+                      <img
+                        src="./assets/imgs/main/image-3.jpg"
+                        class="img-fluid rounded py-1 imgcard"
+                        alt="Card Image"
+                      />
+                    </div>
+                    <!-- Contenuto -->
+                    <div class="col-8 col-sm-8 col-md-9 col-lg-9 col-xl-12">
+                      <div class="card-body">
+                        <h5 class="card-title">Massima Concentrazione</h5>
+                        <p class="card-text">Playlist per Relax</p>
+                        <p class="card-text">
+                          <small class="text-body-light"
+                            >Last updated 7 mins ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-baseline col-12 mt-2 collapse-at-400"
+                    >
+                      <div>
+                        <img src="./Icon/icons8-mi-piace-32.png" alt="" />
+                        <img src="./Icon/three-dots-vertical.svg" alt="" />
+                      </div>
+                      <div>
+                        <p>16 Brani</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card d-flex align-items-start flex-wrap flex-row flex-sm-row flex-md-column flex-lg-column col-md-6 col-md-6c col-lg-4 col-lg-4c col-xl-3 col-xl-3c col-xxl-3 col-xxl-3c text-white bg-dark"
+                  >
+                    <!-- Immagine -->
+                    <div class="col-4 col-sm-4 col-md-12 col-lg-12 col-xl-12">
+                      <img
+                        src="./assets/imgs/main/image-4.jpg"
+                        class="img-fluid rounded py-1 imgcard"
+                        alt="Card Image"
+                      />
+                    </div>
+                    <!-- Contenuto -->
+                    <div class="col-8 col-sm-8 col-md-9 col-lg-9 col-xl-12">
+                      <div class="card-body">
+                        <h5 class="card-title">Peaceful Piano</h5>
+                        <p class="card-text">Playlist Solo Piano</p>
+                        <p class="card-text">
+                          <small class="text-body-light"
+                            >Last updated 3 mins ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-baseline col-12 mt-2 collapse-at-400"
+                    >
+                      <div>
+                        <img src="./Icon/icons8-mi-piace-32.png" alt="" />
+                        <img src="./Icon/three-dots-vertical.svg" alt="" />
+                      </div>
+                      <div>
+                        <p>16 Brani</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card d-flex align-items-start flex-wrap flex-row flex-sm-row flex-md-column flex-lg-column col-md-6 col-md-6c col-lg-4 col-lg-4c col-xl-3 col-xl-3c col-xxl-3 col-xxl-3c text-white bg-dark"
+                  >
+                    <!-- Immagine -->
+                    <div class="col-4 col-sm-4 col-md-12 col-lg-12 col-xl-12">
+                      <img
+                        src="./assets/imgs/main/image-5.jpg"
+                        class="img-fluid rounded py-1 imgcard"
+                        alt="Card Image"
+                      />
+                    </div>
+                    <!-- Contenuto -->
+                    <div class="col-8 col-sm-8 col-md-9 col-lg-9 col-xl-12">
+                      <div class="card-body">
+                        <h5 class="card-title">Lofi Beat</h5>
+                        <p class="card-text">Playlist Lofi</p>
+                        <p class="card-text">
+                          <small class="text-body-light"
+                            >Last updated 3 mins ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-baseline col-12 mt-2 collapse-at-400"
+                    >
+                      <div>
+                        <img src="./Icon/icons8-mi-piace-32.png" alt="" />
+                        <img src="./Icon/three-dots-vertical.svg" alt="" />
+                      </div>
+                      <div>
+                        <p>16 Brani</p>
                       </div>
                     </div>
                   </div>
@@ -641,7 +818,7 @@
         </div>
 
         <!-- Friend Activity -->
-        <div class="col-2 bg-black">
+        <div id="Friend-Activity" class="col-2 bg-black">
           <div class="text-white">
             <div
               class="d-flex align-items-end justify-content-between mb-2 mt-2"
@@ -802,6 +979,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-vibrant/3.1.6/vibrant.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

@@ -72,6 +72,16 @@ body {
     background: rgb(116,5,5);
 background: linear-gradient(180deg, rgba(116,5,5,1) 0%, rgba(28,2,2,1) 35%, rgba(0,0,0,1) 95%);
   }
+
+
+#btnplay, #btnsave {
+  width: 90px;
+}
+
+
+
+
+
   #container-playlist {
     background-color: #12121273;
   }
@@ -171,4 +181,45 @@ background: linear-gradient(180deg, rgba(116,5,5,1) 0%, rgba(28,2,2,1) 35%, rgba
   
   #like-description {
     font-size: 14px;
+  }
+
+
+
+
+
+  @media (max-width: 740px) {
+    #sidebar, #Friend-Activity {
+      display: none; /* Nasconde la sidebar */
+      
+    }
+    .main-content{
+      flex: 0 0 auto;
+    width: 100%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .col-md-6c {
+      flex: 0 0 auto;
+      width: 49%;
+    }
+  }
+  @media (min-width: 992px) {
+    .col-lg-4c {
+      flex: 0 0 auto;
+      width: 32%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .col-xl-3c {
+        flex: 0 0 auto;
+        width: 24%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .collapse-at-400 {
+      display: none !important;
+    }
   }

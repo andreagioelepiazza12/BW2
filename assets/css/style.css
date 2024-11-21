@@ -84,3 +84,91 @@ background: linear-gradient(180deg, rgba(116,5,5,1) 0%, rgba(28,2,2,1) 35%, rgba
     line-height: 33px;
     border-top-width: 1px;
   }
+  #first-l {
+    background-image: url("https://media.istockphoto.com/id/171159840/it/foto/cantante-sul-palco.webp?a=1&b=1&s=612x612&w=0&k=20&c=AEdnA-tyh12zRArZoQd90NPG4xkkp_CaGznj-hOH8n4=");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  #left-arrow:hover,
+  #right-arrow:hover {
+    fill: rgb(180, 180, 180);
+    cursor: pointer;
+  }
+  
+  #scheda-art {
+    margin-top: 7rem;
+  }
+  
+  #verify,
+  #num-stream {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 4rem;
+  }
+  
+  #head-container {
+    height: 100%;
+  }
+  
+  #action {
+    width: 25%;
+  }
+  
+  #follow-btn {
+    font-size: 12px;
+    height: fit-content;
+    padding-block: 4px;
+    padding-inline: 8px;
+  }
+  
+  #img-cont {
+    height: 30px;
+    width: 30px;
+  }
+  
+  #popolari {
+    width: fit-content;
+  }
+  
+  #pop-menu {
+    width: 55%;
+  }
+  
+  #pop-song {
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  #num-pic-name {
+    width: 40%;
+  }
+  
+  #like-photo {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  #like-photo img:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  #heart {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: 0px;
+    right: 6px;
+  }
+  
+  #like-description {
+    font-size: 14px;
+  }

@@ -35,9 +35,20 @@ body {
     display: flex;
     align-items: center;
     position: relative;
+<<<<<<< Updated upstream
     flex-wrap: wrap; /* Consente il wrapping degli elementi su più righe */
     justify-content: space-between; /* Spazia i contenuti */
     gap: 10px;
+=======
+    left: 125px;
+    bottom: 5px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+  }
+>>>>>>> Stashed changes
 
     height: 7rem;
     padding: var(--padding);
@@ -156,8 +167,16 @@ i:hover{
 }
 .progress{
     position: relative;
+<<<<<<< Updated upstream
     height: 100%;
     width: 30%;
+=======
+    bottom: 10px;
+    width: 400px;
+    background-color: #333;
+    border: none;
+    height: 4px;
+>>>>>>> Stashed changes
     border-radius: 10px;
     background-color: var(--secondary-color);
 }

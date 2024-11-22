@@ -194,9 +194,15 @@ background: linear-gradient(180deg, rgba(116,5,5,1) 0%, rgba(28,2,2,1) 35%, rgba
   }
 
 
+  @media (max-width: 768px) {
+    #sidebarartist {
+      display: none; /* Nasconde la sidebar */
+      
+    }
+    
+  }
 
-
-  @media (max-width: 730px) {
+  @media (max-width: 766px) {
     #sidebar {
       display: none; /* Nasconde la sidebar */
       

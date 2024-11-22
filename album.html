@@ -10,6 +10,13 @@
     />
     <link rel="stylesheet" href="./assets/css/circular-font.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="container-fluid">
@@ -231,8 +238,9 @@
                           src="./assets/imgs/search/image-50.jpg"
                           alt=""
                         />
-                        <span class="fs-6">Fabri Fibra - 2010</span>
-                        <span class="fw-light">20 brani, 58 min 40 sec</span>
+                        <span id="artistName" class="fs-4"></span>
+                        <span id="nBrani" class="fw-light fs-4"></span>
+                        <span id="duration" class="fw-light fs-4"></span>
                       </div>
                     </div>
                   </div>
@@ -258,7 +266,7 @@
                   class="row border-bottom my-0 border-light pt-2"
                   style="--bs-border-opacity: 0.25"
                 >
-                  <div class="col-7">
+                  <div class="col-6">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="15"
@@ -273,7 +281,7 @@
                     </svg>
                     <span class="font-off">Titolo</span>
                   </div>
-                  <div class="col-3">
+                  <div class="col-2">
                     <p class="font-off text-center">Riproduzioni</p>
                   </div>
                   <div class="col-1 offset-1 p-0">
@@ -295,65 +303,13 @@
                   </div>
                 </div>
                 <div
+                id="rowContainer"
                   class="row mt-3 justify-content-start align-items-center py-1 rounded"
                 >
-                  <div
-                    class="col-7 d-flex justify-content-start align-items-center"
-                  >
-                    <p class="m-0 font-off fs-listeners">1</p>
-                    <div class="d-inline-block font-off ms-3">
-                      <p class="fs-6 m-0 text-white">Controcultura</p>
-                      <p class="m-0 fs-7">Fabri Fibra</p>
-                    </div>
-                  </div>
-
-                  <div class="col-3">
-                    <p class="font-off text-center m-0 fs-listeners">6.500</p>
-                  </div>
-                  <div class="col-2">
-                    <p class="font-off text-center m-0 fs-listeners">3.50</p>
-                  </div>
+                  
                 </div>
-                <div
-                  class="row mt-3 justify-content-start align-items-center py-1 rounded"
-                >
-                  <div
-                    class="col-7 d-flex justify-content-start align-items-center"
-                  >
-                    <p class="m-0 font-off fs-listeners">1</p>
-                    <div class="d-inline-block font-off ms-3">
-                      <p class="fs-6 m-0 text-white">Controcultura</p>
-                      <p class="m-0 fs-7">Fabri Fibra</p>
-                    </div>
-                  </div>
-
-                  <div class="col-3">
-                    <p class="font-off text-center m-0 fs-listeners">6.500</p>
-                  </div>
-                  <div class="col-2">
-                    <p class="font-off text-center m-0 fs-listeners">3.50</p>
-                  </div>
-                </div>
-                <div
-                  class="row mt-3 justify-content-start align-items-center py-1 rounded"
-                >
-                  <div
-                    class="col-7 d-flex justify-content-start align-items-center"
-                  >
-                    <p class="m-0 font-off fs-listeners">1</p>
-                    <div class="d-inline-block font-off ms-3">
-                      <p class="fs-6 m-0 text-white">Controcultura</p>
-                      <p class="m-0 fs-7">Fabri Fibra</p>
-                    </div>
-                  </div>
-
-                  <div class="col-3">
-                    <p class="font-off text-center m-0 fs-listeners">6.500</p>
-                  </div>
-                  <div class="col-2">
-                    <p class="font-off text-center m-0 fs-listeners">3.50</p>
-                  </div>
-                </div>
+                
+                
               </div>
             </div>
           </div>
@@ -519,6 +475,58 @@
         </div>
       </div>
     </div>
+
+     <!------------------------------soundbar----------------->
+
+     <body>
+        <div class="musicPlayerContainer">
+  
+          <div class="music-player">
+              <div class="song-bar">
+                  <div class="song-infos">
+                      <div class="image-container">
+                          <img id="imgAlbum" src="https://d2y6mqrpjbqoe6.cloudfront.net/image/upload/f_auto,q_auto/media/library-400/216_636967437355378335Your_Lie_Small_hq.jpg" alt="" />
+                      </div>
+                      <div class="song-description">
+                          <p class="title" id="title">
+                              Watashitachi wa Sou Yatte Ikite Iku Jinshu na no
+                          </p>
+                          <p class="artist" id="artist">Masaru Yokoyama</p>
+                      </div>
+                  </div>
+                  <div class="icons">
+                      <i class="far fa-heart"></i>
+                      <i class="fas fa-compress"></i>
+                  </div>
+              </div>
+              <div class="progress-controller">
+                  <div class="control-buttons">
+                      <i class="fas fa-random"></i>
+                      <i class="fas fa-step-backward"></i>
+                      <i class="play-pause fas fa-play"></i>
+                      <i class="fas fa-step-forward"></i>
+                      <i class="fas fa-undo-alt"></i>
+                  </div>
+                  <div class="progress-container">
+                      <span id="currentSongTime">0:49</span>
+                      <div class="progress-bar">
+                          <div class="progress"></div>
+                      </div>
+                      <span id="totalSongTime">3:15</span>
+                  </div>
+              </div>
+              <div class="other-features">
+                  <i class="fas fa-list-ul"></i>
+                  <i class="fas fa-desktop"></i>
+                  <div class="volume-bar">
+                      <i class="fas fa-volume-down"></i>
+                      <div class="progress-bar">
+                          <div class="progress"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/javascript/album.js"></script>

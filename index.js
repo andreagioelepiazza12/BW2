@@ -53,7 +53,7 @@ const getproduct = function () {
                     <!-- Contenuto -->
                     <div class="col-8 col-sm-8 col-md-9 col-lg-9 col-xl-12">
                       <div class="card-body">
-                      <a href="artisti.html?id=${dataArray[1].artist.id}" class="text-white text-decoration-none fs-3">${dataArray[i].artist.name}</a>
+                      <a href="artist.html?id=${dataArray[1].artist.id}" class="text-white text-decoration-none fs-3">${dataArray[i].artist.name}</a>
                         <h5 id="titlecard" class="card-title"></h5>
                         <a href="album.html?id=${dataArray[i].album.id}" class="text-white text-decoration-none">${dataArray[i].album.title}</a>
                         <p class="card-text">

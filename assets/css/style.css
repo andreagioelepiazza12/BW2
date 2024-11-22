@@ -1,0 +1,504 @@
+body {
+  font-family: "Circular";
+    background-color: #121212;
+        color: white;
+}
+
+
+.sidebar {
+  height: 100vh;
+  
+  padding: 1rem;
+}
+
+
+.flex-row p:nth-child(1) {
+  font-size: 12px;
+}
+
+.flex-row div p:nth-child(2) {
+  font-size: 9px;
+}
+
+.flex-row > p:nth-child(2) {
+  font-size: 11px;
+}
+
+.flex-row > p:nth-child(2)::after {
+  content: " • ";
+}
+
+.flex-row p + p {
+  font-size: 11px;
+}
+
+#profile-pic {
+  min-width: 35px;
+}
+  
+
+ 
+  
+
+  .text {
+    font-weight: 900;
+  }
+  .w-5 {
+    width: 4%;
+  }
+  
+  .text-gray {
+    color: rgb(173, 173, 173);
+  }
+  
+  .bg-black {
+    background-color: black;
+  }
+  
+  .prima-colonna {
+    font-size: small;
+  }
+  
+  .colonna-nera {
+    font-size: x-small;
+  }
+  
+  .gradient {
+    background: linear-gradient(160deg, rgba(59, 28, 169, 1) 18%, rgba(126, 148, 154, 1) 97%);
+  }
+
+
+  .main-content {
+    background: rgb(116,5,5);
+background: linear-gradient(180deg, rgba(116,5,5,1) 0%, rgba(28,2,2,1) 35%, rgba(0,0,0,1) 95%);
+  }
+
+
+#btnplay, #btnsave {
+  width: 90px;
+}
+
+
+#h1banner {
+  font-size: clamp(1rem, 4vw, 3rem)
+}
+
+
+  #container-playlist {
+    background-color: #12121273;
+  }
+  .tablec {
+    background-color: #12121200;
+    width: 100%;
+    
+  }
+  tbody{
+    line-height: 33px;
+    border-top-width: 1px;
+  }
+  #first-l {
+    background-image: url("https://media.istockphoto.com/id/171159840/it/foto/cantante-sul-palco.webp?a=1&b=1&s=612x612&w=0&k=20&c=AEdnA-tyh12zRArZoQd90NPG4xkkp_CaGznj-hOH8n4=");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  #left-arrow:hover,
+  #right-arrow:hover {
+    fill: rgb(180, 180, 180);
+    cursor: pointer;
+  }
+  
+  #scheda-art {
+    margin-top: 7rem;
+  }
+  
+  #verify,
+  #num-stream {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 4rem;
+  }
+  
+  #head-container {
+    height: 100%;
+  }
+  
+  #action {
+    width: 25%;
+  }
+  
+  #follow-btn {
+    font-size: 12px;
+    height: fit-content;
+    padding-block: 4px;
+    padding-inline: 8px;
+  }
+  
+  #img-cont {
+    height: 30px;
+    width: 30px;
+  }
+  
+  #popolari {
+    width: fit-content;
+  }
+  
+  #pop-menu {
+    width: 55%;
+  }
+  
+  #pop-song {
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  #num-pic-name {
+    width: 40%;
+  }
+  
+  #like-photo {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  #like-photo img:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  #heart {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: 0px;
+    right: 6px;
+  }
+  
+  #like-description {
+    font-size: 14px;
+  }
+
+  @media (max-width: 991px) {
+     #Friend-Activity {
+      display: none; /* Nasconde la sidebar */
+      
+    }
+    
+  }
+
+
+  @media (max-width: 768px) {
+    #sidebarartist {
+      display: none; /* Nasconde la sidebar */
+      
+    }
+    
+  }
+
+  @media (max-width: 766px) {
+    #sidebar {
+      display: none; /* Nasconde la sidebar */
+      
+    }
+    .main-content{
+      flex: 0 0 auto;
+    width: 100%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .col-md-6c {
+      flex: 0 0 auto;
+      width: 49%;
+    }
+  }
+  @media (min-width: 992px) {
+    .col-lg-4c {
+      flex: 0 0 auto;
+      width: 32%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .col-xl-3c {
+        flex: 0 0 auto;
+        width: 24%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .collapse-at-400 {
+      display: none !important;
+    }
+  }
+
+
+
+
+  .musicPlayerContainer {
+    position: fixed; 
+      bottom: 0; 
+      left: 0; 
+      width: 100%; 
+      background-color: #111;
+      color: #fff; 
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); 
+      z-index: 1000; 
+      padding: 10px 20px; 
+      display: flex; 
+      flex-direction: column; 
+  }
+  
+  .music-player {
+      --primary-color: #ddd;
+      --secondary-color: #999;
+      --green-color: #2d5;
+      --padding: 1em;
+      background-color: #111;
+      display: flex;
+      align-items: center;
+      position: relative;
+      flex-wrap: wrap; /* Consente il wrapping degli elementi su più righe */
+      justify-content: space-between; /* Spazia i contenuti */
+      gap: 10px;
+  
+      height: 7rem;
+      padding: var(--padding);
+      color: var(--primary-color);
+  }
+  
+  i{
+      color: var(--secondary-color);
+  }
+  
+  i:hover{
+      color: var(--primary-color);
+  }
+  
+  .music-player .song-bar,
+  .music-player .progress-controller,
+  .music-player .other-features {
+      flex: 1 1 auto; /* Distribuisce lo spazio */
+      display: flex;
+      align-items: center;
+      gap: 15px;
+  }
+  
+  .music-player .song-bar .song-infos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .song-bar {
+      position: absolute;
+      left: var(--padding);
+  
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1.5rem;
+      width: 25%;
+  }
+  
+  .song-infos {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+  }
+  .image-container {
+      --size: 4.5em;
+      flex-shrink: 0;
+      width: var(--size);
+      height: var(--size);
+  }
+  .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  .song-description p {
+      margin: 0.2em;
+  }
+  .title,
+  .artist {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+  }
+  .title:hover,
+  .artist:hover {
+      text-decoration: underline;
+  }
+  .artist{
+      color: var(--secondary-color);
+  }
+  .icons{
+      display: flex;
+      gap: 1em;
+  }
+  .progress-controller{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5em;
+      color: var(--secondary-color);
+  }
+  .control-buttons{
+      display: flex;
+      align-items: center;
+      gap: 2em;
+  }
+  .play-pause{
+      display: inline-block;
+      padding: 1em;
+      background-color: var(--primary-color);
+      color: #111;
+      border-radius: 50%;
+  }
+  .play-pause:hover{
+      transform: scale(1.1);
+      color: #111;
+  }
+  .progress-container{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+  }
+  .progress-bar{
+      height: 4px;
+      border-radius: 10px;
+      width: 30%;
+      background-color: #ccc4;
+  }
+  .progress{
+      position: relative;
+      height: 100%;
+      width: 30%;
+      border-radius: 10px;
+      background-color: var(--secondary-color);
+  }
+  .progress-bar:hover .progress{
+      background-color: var(--green-color);
+  }
+  .progress-bar:hover .progress::after{
+      content: "";
+      position: absolute;
+      --size: 1em;
+      width: var(--size);
+      height: var(--size);
+      right: 0;
+      border-radius: 50%;
+      background-color: var(--primary-color);
+      transform: translate(50%, calc(2px - 50%));
+  }
+  .other-features{
+      position: absolute;
+      right: var(--padding);
+      display: flex;
+      flex-direction: row;
+      gap: 1em;
+  }
+  .volume-bar{
+      display: flex;
+      align-items: center;
+      gap: .7em;
+  }
+  .volume-bar .progress-bar{
+      width: 6em;
+  }
+  .volume-bar .progress-bar:hover .progress::after{
+      --size: .8em;
+  }
+  
+  @media (max-width: 768px) {
+    .music-player {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 20px;
+    }
+  
+    .song-bar {
+        position: relative;
+        width: 100%;
+        justify-content: center;
+    }
+  
+    .progress-container {
+        width: 90%;
+    }
+  
+    .progress-bar {
+        width: 70%;
+    }
+  
+    .other-features {
+        position: relative;
+        width: 100%;
+        justify-content: center;
+    }
+  
+    .image-container {
+        --size: 3.5em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .music-player {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 15px;
+    }
+  
+    .song-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+  
+    .progress-container {
+        width: 100%;
+    }
+  
+    .progress-bar {
+        width: 90%;
+    }
+  
+    .other-features {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+  
+    .image-container {
+        --size: 3em;
+    }
+  
+    .play-pause {
+        font-size: 1.2rem;
+        padding: 0.8em;
+    }
+  
+    .control-buttons {
+        gap: 1.5em;
+    }
+  
+    i {
+        font-size: 1rem;
+      }
+    }
